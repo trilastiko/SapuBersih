@@ -1,0 +1,18 @@
+{
+  "prompt": "Minimal institutional line-art illustration for an empty-state placeholder in serious government software. A single simplified magnifying glass over a stylized grid of empty document cards and a small dotted network node motif, drawn in thin clean monoline strokes. Muted desaturated slate-blue and soft grey line work on a very dark navy-ink background, with one small restrained crimson-red accent dot. Calm, quiet, spacious composition with generous empty space and centered subject. The tone is professional, restrained, and understated — an analyst's blank workspace waiting for data. Faint subtle grain. No text, no words, no letters, no numbers.",
+  "negative_prompt": "text, words, letters, numbers, logos, watermark, colorful, rainbow, oversaturated, purple gradient, cartoon mascot, cute characters, playful, glossy 3d, busy, cluttered, photo, people",
+  "api_parameters": {
+    "google_search": false,
+    "resolution": "1K",
+    "output_format": "png",
+    "aspect_ratio": "4:3"
+  },
+  "settings": {
+    "resolution": "1K",
+    "style": "minimal monoline vector illustration, institutional",
+    "lighting": "flat even, dark ground",
+    "camera_angle": "flat straight-on",
+    "depth_of_field": "flat",
+    "quality": "clean thin line work, subtle grain, restrained single accent"
+  }
+}

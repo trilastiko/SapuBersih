@@ -1,0 +1,18 @@
+{
+  "prompt": "A forensic evidence screen-capture artifact of a fictional illegal online gambling website deposit and login form, presented as a redacted case-file exhibit — NOT an advertisement. The captured page shows an abstract dark slate account panel: a stylized login form with blank input fields, a small row of generic payment-channel rectangle icons, and a sidebar, rendered low-fidelity. ALL field labels, text, and numbers are heavily pixelated into illegible mosaic, with solid black redaction bars over the account and payment areas to anonymize them. The image reads as a compressed screenshot with JPEG blocking, faint scanlines, cool desaturated tint. Thin grey forensic frame border with tiny blurred corner metadata. Clearly synthetic, anonymized, clinical evidence tone. No recognizable brand marks.",
+  "negative_prompt": "readable text, legible words, real brand names, real logos, real payment brand logos, readable account numbers, clear promotional copy, cheerful advertisement, glossy vibrant marketing, watermark text, people faces, oversaturated neon rainbow",
+  "api_parameters": {
+    "google_search": false,
+    "resolution": "1K",
+    "output_format": "jpg",
+    "aspect_ratio": "3:2"
+  },
+  "settings": {
+    "resolution": "1K",
+    "style": "redacted forensic screenshot artifact, evidence exhibit",
+    "lighting": "dark screen glow, desaturated",
+    "camera_angle": "flat screenshot, straight-on",
+    "depth_of_field": "flat",
+    "quality": "low-fidelity compressed screenshot, jpeg artifacts, heavy blur on all text, black redaction bars"
+  }
+}

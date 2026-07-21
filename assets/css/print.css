@@ -1,0 +1,30 @@
+/* ==========================================================================
+   print.css — isolates the printable dossier / summary for "Cetak / Simpan PDF"
+   ========================================================================== */
+@media print {
+  @page { size: A4; margin: 14mm; }
+
+  html, body { background: #ffffff !important; }
+  #boot, #sidebar, #topbar, #drawer-root, #modal-root, #toast-root, .no-print { display: none !important; }
+
+  #root { display: block !important; }
+  #main { background: #fff !important; }
+  #view { max-width: none !important; padding: 0 !important; margin: 0 !important; }
+
+  /* Show only the print target */
+  #view > *:not(#print-area):not(.grid) { display: none !important; }
+  #view .grid { display: block !important; }
+  #view .grid > *:not(#print-area) { display: none !important; }
+
+  #print-area { display: block !important; }
+
+  /* Flatten the paper document for print */
+  .dossier { box-shadow: none !important; border: none !important; border-radius: 0 !important; font-size: 11.5px; }
+  .dsr-sec { break-inside: avoid; }
+  .dsr-cap img, .dsr-cap .img-fallback { max-height: 260px; }
+  .exec-grid { grid-template-columns: repeat(3, 1fr) !important; }
+  .capture, .card { break-inside: avoid; }
+
+  a[href]::after { content: ""; }
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+}

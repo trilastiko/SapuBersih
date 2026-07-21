@@ -1,0 +1,18 @@
+{
+  "prompt": "A forensic evidence screen-capture artifact of a fictional illegal online gambling website, presented as a case-file exhibit — NOT an advertisement. The captured web page has a dark navy and muted gold casino-style layout: a top navigation bar, a grid of abstract glowing slot-machine reel tiles with generic fruit and gem shapes, and side panels. ALL promotional text and any numbers are heavily pixelated and blurred into illegible mosaic blocks, with several solid black rectangular redaction bars covering headline offers. The whole capture looks like a slightly compressed low-fidelity screenshot with mild JPEG artifacts, faint moire, and a cool desaturated tint. A thin light-grey forensic frame border surrounds the capture with small illegible blurred metadata marks in the corners. Obviously synthetic and anonymized. Serious, clinical, evidence-locker mood — this is a redacted exhibit, not a working site.",
+  "negative_prompt": "readable text, legible words, real brand names, real logos, real casino brands, sharp readable offers, phone numbers, clear promotional copy, cheerful advertisement, glossy vibrant marketing, watermark text, people, faces, oversaturated neon rainbow",
+  "api_parameters": {
+    "google_search": false,
+    "resolution": "1K",
+    "output_format": "jpg",
+    "aspect_ratio": "3:2"
+  },
+  "settings": {
+    "resolution": "1K",
+    "style": "redacted forensic screenshot artifact, evidence exhibit",
+    "lighting": "flat screen glow, desaturated",
+    "camera_angle": "flat screenshot, straight-on",
+    "depth_of_field": "flat",
+    "quality": "low-fidelity compressed screenshot, jpeg artifacts, heavy blur on all text, black redaction bars"
+  }
+}

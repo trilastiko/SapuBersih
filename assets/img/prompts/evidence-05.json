@@ -1,0 +1,18 @@
+{
+  "prompt": "A forensic evidence screen-capture artifact of a fictional illegal online lottery-numbers gambling website, presented as a redacted case-file exhibit — NOT an advertisement. The captured page shows an abstract dark teal-and-black grid of numbered ball shapes and a results-board layout, rendered loosely and low-fidelity. ALL numbers, dates, and text are heavily pixelated into illegible mosaic blocks, with several solid black redaction bars across rows. Looks like a compressed screenshot with JPEG blocking, faint moire, cool desaturated tint. Thin grey forensic frame border with tiny blurred corner metadata marks. Clearly synthetic, anonymized, clinical evidence tone.",
+  "negative_prompt": "readable text, legible words, readable numbers, real brand names, real logos, clear promotional copy, cheerful advertisement, glossy vibrant marketing, watermark text, people faces, oversaturated neon rainbow",
+  "api_parameters": {
+    "google_search": false,
+    "resolution": "1K",
+    "output_format": "jpg",
+    "aspect_ratio": "3:2"
+  },
+  "settings": {
+    "resolution": "1K",
+    "style": "redacted forensic screenshot artifact, evidence exhibit",
+    "lighting": "dark screen glow, desaturated",
+    "camera_angle": "flat screenshot, straight-on",
+    "depth_of_field": "flat",
+    "quality": "low-fidelity compressed screenshot, jpeg artifacts, heavy blur on all text, black redaction bars"
+  }
+}

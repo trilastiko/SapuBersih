@@ -1,0 +1,10 @@
+# Dependencies (playwright-core installed only for local verification; not needed at runtime)
+node_modules/
+package-lock.json
+package.json
+
+# Transient
+*.log
+.DS_Store
+Thumbs.db
+scratchpad/

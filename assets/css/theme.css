@@ -1,0 +1,138 @@
+/* ==========================================================================
+   SapuBersih — Design tokens, fonts, and white-label themes
+   Two themes: "kode" (KODE command, dark) and "komdigi" (neutral govt, light)
+   ========================================================================== */
+
+/* ---- Local fonts (offline; no network) ---- */
+@font-face { font-family:'Plex Sans'; font-weight:400; font-style:normal; font-display:swap; src:url('../fonts/plex-sans-400.woff2') format('woff2'); }
+@font-face { font-family:'Plex Sans'; font-weight:500; font-style:normal; font-display:swap; src:url('../fonts/plex-sans-500.woff2') format('woff2'); }
+@font-face { font-family:'Plex Sans'; font-weight:600; font-style:normal; font-display:swap; src:url('../fonts/plex-sans-600.woff2') format('woff2'); }
+@font-face { font-family:'Plex Sans'; font-weight:700; font-style:normal; font-display:swap; src:url('../fonts/plex-sans-700.woff2') format('woff2'); }
+@font-face { font-family:'Plex Mono'; font-weight:400; font-style:normal; font-display:swap; src:url('../fonts/plex-mono-400.woff2') format('woff2'); }
+@font-face { font-family:'Plex Mono'; font-weight:500; font-style:normal; font-display:swap; src:url('../fonts/plex-mono-500.woff2') format('woff2'); }
+@font-face { font-family:'Plex Mono'; font-weight:600; font-style:normal; font-display:swap; src:url('../fonts/plex-mono-600.woff2') format('woff2'); }
+@font-face { font-family:'Plex Serif'; font-weight:500; font-style:normal; font-display:swap; src:url('../fonts/plex-serif-500.woff2') format('woff2'); }
+@font-face { font-family:'Plex Serif'; font-weight:600; font-style:normal; font-display:swap; src:url('../fonts/plex-serif-600.woff2') format('woff2'); }
+
+:root {
+  --font-sans: 'Plex Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --font-serif: 'Plex Serif', ui-serif, Georgia, serif;
+
+  /* Type scale */
+  --fs-eyebrow: 11px;
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-base: 14px;
+  --fs-md: 15px;
+  --fs-lg: 18px;
+  --fs-xl: 22px;
+  --fs-2xl: 28px;
+  --fs-3xl: 38px;
+  --fs-display: 52px;
+
+  /* Spacing */
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 20px;
+  --sp-6: 24px; --sp-7: 32px; --sp-8: 40px; --sp-9: 56px; --sp-10: 72px;
+
+  /* Radius — modest, institutional (not pill/startup) */
+  --r-sm: 4px; --r-md: 6px; --r-lg: 9px; --r-xl: 14px;
+
+  --sidebar-w: 256px;
+  --topbar-h: 60px;
+  --maxw: 1440px;
+
+  --ease: cubic-bezier(.22,.61,.36,1);
+  --dur: 220ms;
+}
+
+/* ========================= KODE — dark command theme ===================== */
+:root[data-theme="kode"] {
+  --bg:        #080D16;
+  --bg-grad-1: #0B1220;
+  --bg-grad-2: #070B13;
+  --panel:     #0D1524;   /* sidebar / topbar */
+  --surface:   #111B2D;   /* cards */
+  --surface-2: #16223A;   /* raised / hover */
+  --surface-3: #1B2942;
+  --line:      #1E2C46;
+  --line-2:    #2A3B5A;
+  --line-strong:#374B6E;
+
+  --text:   #E8EEF8;
+  --text-2: #9FB0CB;
+  --text-3: #64748F;
+  --text-inv: #0A0F1A;
+
+  --accent:   #2E7CD6;   /* institutional azure — interactive */
+  --accent-2: #4B93E8;
+  --accent-soft: rgba(46,124,214,.14);
+  --accent-line: rgba(46,124,214,.40);
+
+  --brand:    #D23B4E;   /* KODE red — brand + critical/alert */
+  --brand-2:  #E5566A;
+  --brand-soft: rgba(210,59,78,.14);
+
+  /* Status semantics */
+  --st-new:      #4B93E8;  --st-new-bg:    rgba(75,147,232,.14);
+  --st-review:   #D99A2B;  --st-review-bg: rgba(217,154,43,.15);
+  --st-judi:     #D23B4E;  --st-judi-bg:   rgba(210,59,78,.15);
+  --st-bukan:    #3FA981;  --st-bukan-bg:  rgba(63,169,129,.15);
+  --st-neutral:  #7C89A6;  --st-neutral-bg:rgba(124,137,166,.15);
+  --st-invest:   #B36AD9;  --st-invest-bg: rgba(179,106,217,.15);
+
+  --ok: #3FA981; --warn: #D99A2B; --danger: #D23B4E; --info: #4B93E8;
+
+  --shadow-1: 0 1px 2px rgba(0,0,0,.4);
+  --shadow-2: 0 6px 20px rgba(0,0,0,.38);
+  --shadow-3: 0 18px 48px rgba(0,0,0,.55);
+  --grid-line: rgba(255,255,255,.035);
+  --chart-grid: rgba(159,176,203,.12);
+  --scrim: rgba(4,7,12,.66);
+  --hero-overlay: linear-gradient(180deg, rgba(8,13,22,.15) 0%, rgba(8,13,22,.85) 100%);
+}
+
+/* ==================== KOMDIGI — neutral government (light) ================ */
+:root[data-theme="komdigi"] {
+  --bg:        #EDF1F7;
+  --bg-grad-1: #F1F5FA;
+  --bg-grad-2: #E7ECF4;
+  --panel:     #FFFFFF;
+  --surface:   #FFFFFF;
+  --surface-2: #F4F7FB;
+  --surface-3: #EAF0F8;
+  --line:      #DCE4EF;
+  --line-2:    #CBD6E6;
+  --line-strong:#B4C2D8;
+
+  --text:   #16202F;
+  --text-2: #52627A;
+  --text-3: #7A8AA1;
+  --text-inv: #FFFFFF;
+
+  --accent:   #15489E;   /* formal government navy-blue */
+  --accent-2: #1E5AC0;
+  --accent-soft: rgba(21,72,158,.09);
+  --accent-line: rgba(21,72,158,.30);
+
+  --brand:    #C1121F;   /* Indonesian red */
+  --brand-2:  #D6283A;
+  --brand-soft: rgba(193,18,31,.10);
+
+  --st-new:      #1E5AC0;  --st-new-bg:    rgba(30,90,192,.10);
+  --st-review:   #B77500;  --st-review-bg: rgba(183,117,0,.12);
+  --st-judi:     #C1121F;  --st-judi-bg:   rgba(193,18,31,.10);
+  --st-bukan:    #1F7A55;  --st-bukan-bg:  rgba(31,122,85,.11);
+  --st-neutral:  #5A6B82;  --st-neutral-bg:rgba(90,107,130,.12);
+  --st-invest:   #7B3FB0;  --st-invest-bg: rgba(123,63,176,.11);
+
+  --ok: #1F7A55; --warn: #B77500; --danger: #C1121F; --info: #1E5AC0;
+
+  --shadow-1: 0 1px 2px rgba(23,32,47,.06);
+  --shadow-2: 0 6px 18px rgba(23,32,47,.09);
+  --shadow-3: 0 20px 44px rgba(23,32,47,.16);
+  --grid-line: rgba(21,40,72,.04);
+  --chart-grid: rgba(82,98,122,.16);
+  --scrim: rgba(23,32,47,.42);
+  --hero-overlay: linear-gradient(180deg, rgba(10,20,40,.20) 0%, rgba(10,20,40,.72) 100%);
+}

@@ -1,0 +1,18 @@
+{
+  "prompt": "Abstract institutional government-technology cover graphic depicting a large interconnected network topology floating in deep dark space. Hundreds of small circular nodes of varying sizes connected by thin luminous filament lines, forming dense clusters that thin out toward the edges. A few nodes glow slightly brighter in a restrained crimson-red, most nodes are cool desaturated steel-blue and slate-grey. Very dark navy-ink background (#0B1220) with a subtle radial vignette and faint volumetric depth haze. The mood is serious, forensic, authoritative, surveillance-grade intelligence software — like a national threat-mapping command center, not consumer tech. Extremely subtle fine grain and a faint horizontal scanline texture. Clean minimal negative space in the lower third. No text, no logos, no words, no numbers anywhere. Cinematic, restrained, muted, high contrast. Do not add any user interface chrome or buttons.",
+  "negative_prompt": "text, words, letters, numbers, logos, watermark, warped text, ui buttons, bright neon rainbow, oversaturated colors, purple gradient, cartoon, cheerful, playful, glossy plastic, 3d render toy look, cluttered, busy, lens flare overload, stock-photo people",
+  "api_parameters": {
+    "google_search": false,
+    "resolution": "2K",
+    "output_format": "jpg",
+    "aspect_ratio": "16:9"
+  },
+  "settings": {
+    "resolution": "2K",
+    "style": "abstract data-network illustration, intelligence-grade, institutional government tech",
+    "lighting": "dark ambient with localized node glow, soft radial vignette",
+    "camera_angle": "straight-on flat composition with slight depth",
+    "depth_of_field": "deep, faint atmospheric haze at edges",
+    "quality": "high detail, subtle grain, muted restrained palette"
+  }
+}
