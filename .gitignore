@@ -8,3 +8,15 @@ package.json
 .DS_Store
 Thumbs.db
 scratchpad/
+
+# Local credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+secrets/
+*.pem
+*.key
